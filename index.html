@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --font-family-secondary: "Roboto", sans-serif;
+      }
+      .email-wrapper {
+        background-color: #f6f6f6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: var(--font-family-secondary);
+        padding: 10px 0 0 0;
+      }
+      .email-password-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 30px;
+        background-color: #fff;
+        width: 80%;
+        margin-bottom: 20px;
+      }
+      .email-password-container h1 {
+        padding-bottom: 20px;
+        font-weight: 400;
+      }
+      .email-password-container button {
+        background-color: #3598dc;
+        color: #fff;
+        outline: none;
+        border: none;
+        border-radius: 6px;
+        padding: 10px 20px;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .email-password-container button:hover {
+        cursor: pointer;
+        background-color: #06c;
+      }
+      .para-container {
+        text-align: left;
+        margin-bottom: 20px;
+        line-height: 20px;
+      }
+      .address-footer {
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 50px;
+        line-height: 20px;
+        color: #80868b;
+      }
+      .address-footer a {
+        color: #80868b;
+      }
+      @media all and (max-width: 750px) {
+        .email-password-container {
+          width: 90%;
+          padding: 20px;
+        }
+      }
+      @media all and (max-width: 500px) {
+        p {
+          font-size: 14px;
+        }
+        .email-password-container {
+          padding: 10px;
+        }
+        .email-password-container h1 {
+          font-size: 25px;
+        }
+        .email-password-container button {
+          font-size: 16px;
+          padding: 7px 12px;
+        }
+      }
+      @media all and (max-width: 360px) {
+        .email-password-container {
+          padding: 10px;
+        }
+        .email-password-container h1 {
+          font-size: 25px;
+        }
+        .email-password-container button {
+          font-size: 16px;
+          padding: 7px 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-wrapper">
+      <div class="email-password-container">
+        <h1>Password Reset</h1>
+        <div class="para-container">
+          <p>
+            Seems like you forgot your password for WebPipl. If this is true,
+            click below to reset your password.
+          </p>
+        </div>
+        <button>Reset My Password</button>
+        <div class="para-container">
+          <p>
+            If you did not forget your password you can safely ignore this
+            email.
+          </p>
+        </div>
+      </div>
+      <div class="address-footer">
+        <p>
+          WebPipl, #601, White Fields, Hyderabad, 500081 <br />
+          Don't like these Emails?
+          <a href="#">Unsubscribe</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
